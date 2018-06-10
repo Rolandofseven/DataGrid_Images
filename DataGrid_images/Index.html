@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DevExtreme with webpack and Knockout example</title>
+
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" type="text/css" href="node_modules/devextreme/dist/css/dx.common.css" />
+  <link rel="stylesheet" type="text/css" href="node_modules/devextreme/dist/css/dx.light.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+
+    .custom-item .product-name  {
+        display: inline-block;
+      
+       
+    }
+
+  </style>
+<style>
+#gridContainer {
+    height: 440px;
+    width: 100%;
+}
+
+img {
+    height: 100px;
+    display: block;
+}
+
+</style>
+
+</head>
+
+<body>
+  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)">
+    <!--
+    <div id="button">
+        <div data-bind="dxButton: buttonOptions"></div>
+    </div>
+    <div id="toast">
+        <div data-bind="dxToast: toastOptions"></div>
+    </div>
+  </div>
+<div class="demo-container">
+    <div id="datagrid">
+        <div data-bind="dxGrid: dataGridOptions"></div>
+    </div>
+</div>
+
+-->
+<div id="button">
+        <div data-bind="dxButton: buttonOptions"></div>
+    </div>
+
+
+<div class="demo-container">
+    <div id="data-grid-demo">
+        <div data-bind="dxPopup: {
+            title: 'Allocations History',
+            visible: showAllocatonHistoryForm,
+            maxWidth: 1250,
+            maxHeight: 750
+        }">
+        <div>
+            <div id="gridContainer" data-bind="dxDataGrid: dataGridOptions"></div>
+        </div>
+        
+        </div>
+      
+    </div>
+</div>
+
+
+  <div id='content'></div>
+
+
+  <script src="dist/index.bundle.js"></script>
+</body>
+
+</html>
